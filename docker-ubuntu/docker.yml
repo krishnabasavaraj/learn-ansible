@@ -12,3 +12,6 @@
 
   - name: Install Docker
     apt: package=docker-ce state=installed
+
+  - name: Start/Restart service docker-ce
+    service: name=docker state=started enabled=yes
